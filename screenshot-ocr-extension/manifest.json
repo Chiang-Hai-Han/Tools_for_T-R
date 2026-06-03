@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "一键截图OCR",
+  "version": "2.0.0",
+  "description": "截取当前屏幕 → 发送到本地OCR服务 → 导出CSV",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["http://127.0.0.1:8765/*", "http://localhost:8765/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "一键截图OCR",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

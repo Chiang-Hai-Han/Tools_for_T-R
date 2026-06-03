@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一鍵截圖OCR</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>📸 一鍵截圖 OCR</h1>
+  <div class="header-row">
+    <span class="version">v2.0.0</span>
+    <span id="server-status" class="server-badge off">● 離線</span>
+  </div>
+</div>
+
+<div id="status-bar" class="status-bar hidden"></div>
+
+<button id="capture-btn" class="btn-capture">
+  <span class="btn-icon">📷</span> 截取當前屏幕
+  <span class="btn-hint">Ctrl+Enter</span>
+</button>
+
+<div id="list-wrap" class="list-wrap">
+  <div class="list-header">
+    <span id="list-count">0 張截圖</span>
+    <div class="list-actions">
+      <button id="export-btn" class="btn-sm" title="下載 CSV">📥 導出CSV</button>
+      <button id="clear-btn" class="btn-sm danger" title="清空全部">🗑 清空</button>
+    </div>
+  </div>
+  <div id="list" class="list"></div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
