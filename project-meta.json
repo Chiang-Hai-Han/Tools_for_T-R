@@ -1,0 +1,23 @@
+{
+  "name": "Tools_for_T-R",
+  "description": "教研工作小工具集合 - 截图OCR识别、批量TTS语音生成",
+  "type": "toolset",
+  "status": "active",
+  "maturity": "production",
+  "owner": "海瀚",
+  "repository": "https://github.com/Chiang-Hai-Han/Tools_for_T-R",
+  "language": ["Python", "JavaScript"],
+  "tools": [
+    {
+      "name": "screenshot-ocr-extension",
+      "description": "Chrome扩展 + Flask本地OCR服务，截图识别文字并导出CSV"
+    },
+    {
+      "name": "batch-tts-from-excel",
+      "description": "从Excel台词表批量生成TTS语音（Hermes Skill）"
+    }
+  ],
+  "version": "0.1.0",
+  "last_updated": "2026-06-03",
+  "license": "MIT"
+}
